@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top white navbar */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 8px 16px;
+      border-bottom: 1px solid #ccc;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .logo span {
+      color: #e50914; /* red X */
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+    .icons i {
+      font-size: 22px;
+      margin-left: 18px;
+      cursor: pointer;
+    }
+
+    /* Bottom dark strip */
+    .bottom-nav {
+      display: flex;
+      align-items: center;
+      background: #222;
+      padding: 6px 12px;
+      color: #fff;
+      font-size: 14px;
+    }
+    .bottom-nav div {
+      margin-right: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .bottom-nav div span {
+      margin-left: 6px;
+    }
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background: red;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  </style>
+  <!-- Use icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Top white nav -->
+  <div class="top-nav">
+    <div class="logo">
+      <img src="https://via.placeholder.com/32" alt="Logo" style="margin-right:8px;">
+      <span>X</span>X-ROHIT
+    </div>
+    <div class="icons">
+      <i class="fa fa-search"></i>
+      <i class="fa fa-user-circle"></i>
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+
+  <!-- Bottom black strip -->
+  <div class="bottom-nav">
+    <div><span class="live-dot"></span><span>Live</span></div>
+    <div><i class="fa fa-crown" style="color:gold;"></i><span>Rohit Premium</span></div>
+    <div><i class="fa fa-heart" style="color:hotpink;"></i><span>Rohit's Favorites</span></div>
+    <div><span>Channels</span></div>
+  </div>
+</body>
+</html>
