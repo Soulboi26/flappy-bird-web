@@ -1,0 +1,84 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div class="login-container">
+  <h1>Login Your Acc</h1>
+  <div class="form-row"><input class="input-box" type="text" placeholder="Enter Username" required></div>
+  <div class="form-row"><input class="input-box" type="password" placeholder="Enter Password" required></div>
+
+  <div class="actions">
+    <a href="home.html"><button class="Rember" style="color: orange;">LOGIN</button></a>
+    <input type="checkbox"/> <span style="color: orange;">Remember me</span>
+  </div>
+
+
+
+ <style>
+
+body {
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  background-color: #000;  
+}
+
+.login-container {
+  width: 360px;
+  max-width: 92%;
+  padding: 30px 28px;
+  
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  color: #fff;
+  box-sizing: border-box;
+}
+/* Heading */
+.login-container h1 {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: orange;
+  letter-spacing: 0.5px;
+}
+/* Form rows */
+.form-row { margin-bottom: 18px; }
+
+/* Inputs: full width, visible focus */
+.input-box, input[type="text"], input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.2);
+  outline:none
+  box-sizing: border-box;
+  background: orange;
+  color: #222;
+}
+
+/* nicer focus ring for accessibility */
+.input-box:focus, input[type="text"]:focus, input[type="password"]:focus {
+  border-color: rgba(0,0,0,0.35);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.06);
+}
+
+
+/* Login button - full width on small screens, fixed width on larger */
+button.Rember {
+  min-width: 110px;
+  padding: 10px 14px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}</style>
